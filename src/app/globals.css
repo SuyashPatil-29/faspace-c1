@@ -7,3 +7,12 @@ body{
   margin: 0;
   box-sizing: border-box;
 }
+
+.container {
+  scrollbar-width: none;
+}
+
+
+.container::-webkit-scrollbar {
+  display: none;
+}
