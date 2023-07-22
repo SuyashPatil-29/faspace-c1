@@ -1,6 +1,8 @@
 import Header from "./components/Header";
-import Categories from "./components/CategorySlider";
+import Categories from "./components/Category/CategorySlider";
 import ToggleBar from "./components/ToggleBar";
+import Footer from "./components/Footer";
+import Hotels from "./components/Hotel/Hotels";
 
 export default function Home() {
   return (
@@ -8,6 +10,8 @@ export default function Home() {
       <Header />
       <Categories />
       <ToggleBar />
+      <Hotels />
+      <Footer />
     </div>
   )
 }
