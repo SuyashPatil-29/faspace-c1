@@ -2,8 +2,9 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import urlFor from '../../../../sanity/lib/urlFor';
-import { AiFillStar, AiFillHeart, AiOutlineRightCircle } from 'react-icons/ai';
+import { AiFillStar } from 'react-icons/ai';
 import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
+import HeartButton from "./HeartButton"
 
 const HotelDisplay = ({ hotel }) => {
   const [index, setIndex] = useState(0);
@@ -21,12 +22,14 @@ const HotelDisplay = ({ hotel }) => {
       <div className='relative group'>
         <Image
           src={urlFor(hotel.images[index]).url()}
-          className='w-[400px] h-[350px] rounded-lg transition-all duration-400'
+          className='w-[400px] h-[350px] rounded-2xl transition-all duration-400'
           width={400}
           height={350}
           alt='Listing'
         />
-        <AiFillHeart className='absolute top-3 right-3 h-6 w-6 cursor-pointer text-white' />
+        <div className='absolute top-3 right-3 cursor-pointer'>
+          <HeartButton />
+        </div>
         
         <div className='absolute bottom-0 left-0 w-full h-[30%] bg-gradient-to-t from-black/80 to-transparent' />
         <div
