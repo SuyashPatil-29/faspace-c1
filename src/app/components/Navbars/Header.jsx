@@ -6,7 +6,7 @@ import {UserCircleIcon} from "@heroicons/react/24/solid"
 
 const Header = () => {
   return (
-    <header className='flex bg-white justify-between px-20 py-4 items-center border-b-2 fixed top-0 left-0 w-full z-10'>
+    <header className=' md:flex hidden bg-white justify-between px-20 py-4 items-center border-b-2 fixed top-0 left-0 w-full z-10'>
       <Link href="/" className=' -mr-11'><Image src="/assets/Airbnb_logo_PNG3.png" width={100} height={100} alt='Logo'/></Link>
 
       <div className=' ml-60 flex justify-between items-center rounded-full border-2 py-2 px-2 shadow-md hover:shadow-lg min-w-[360px]'>
