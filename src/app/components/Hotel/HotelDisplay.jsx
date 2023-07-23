@@ -31,7 +31,6 @@ const HotelDisplay = ({ hotel }) => {
           <HeartButton />
         </div>
         
-        <div className='absolute bottom-0 left-0 w-full h-[30%] bg-gradient-to-t from-black/80 to-transparent' />
         <div
           className='rounded-full p-3 bg-white group-hover:flex hidden items-center justify-center absolute bottom-[45%] right-2'
           onClick={handleIncIndex}
