@@ -1,48 +1,52 @@
 "use client"
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React,{useState} from 'react';
 import urlFor from '../../../../sanity/lib/urlFor';
 import { AiFillStar } from 'react-icons/ai';
-import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
-import HeartButton from "./HeartButton"
+import HeartButton from "./HeartButton";
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./HotelDisplay.css"
+import { NextArrow, PrevArrow } from "./CarouselArrow"
+import { FaChevronLeft } from 'react-icons/fa';
+
+
 
 const HotelDisplay = ({ hotel }) => {
-  const [index, setIndex] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-  const handleIncIndex = () => {
-    setIndex((index) => (index === hotel.images.length - 1 ? 0 : index + 1));
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    afterChange: (current) => setCurrentSlide(current),
   };
-
-  const handleDecIndex = () => {
-    setIndex((index) => (index === 0 ? hotel.images.length - 1 : index - 1));
-  }
 
   return (
     <div>
-      <div className='relative group'>
-        <Image
-          src={urlFor(hotel.images[index]).url()}
-          className='w-[400px] h-[350px] rounded-2xl transition-all duration-400'
-          width={400}
-          height={350}
-          alt='Listing'
-        />
+      <div className='group'>
+        <Slider
+          {...settings}
+          nextArrow={<NextArrow />}
+        >
+          {hotel.images.map((image, index) => (
+            <div key={index}>
+              <Image
+                src={urlFor(image).url()}
+                className='w-[400px] h-[350px] rounded-2xl transition-all duration-400 relative'
+                width={400}
+                height={350}
+                alt='Listing'
+              />
+            </div>
+          ))}
+        </Slider>
         <div className='absolute top-3 right-3 cursor-pointer'>
           <HeartButton />
-        </div>
-        
-        <div
-          className='rounded-full p-3 bg-white group-hover:flex hidden items-center justify-center absolute bottom-[45%] right-2'
-          onClick={handleIncIndex}
-        >
-          <FaChevronRight className='h-4 w-4 cursor-pointer text-slate-700' />
-        </div>
-
-        <div
-          className={`rounded-full p-3 bg-white ${index === 0 ? 'hidden' : 'group-hover:flex hidden'} items-center justify-center absolute bottom-[45%] left-2`}
-          onClick={handleDecIndex}
-        >
-          <FaChevronLeft className='h-4 w-4 cursor-pointer text-slate-700' />
         </div>
       </div>
 
