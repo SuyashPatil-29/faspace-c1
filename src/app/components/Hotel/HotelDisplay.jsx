@@ -9,8 +9,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./HotelDisplay.css"
-import { NextArrow, PrevArrow } from "./CarouselArrow"
-import { FaChevronLeft } from 'react-icons/fa';
+import { NextArrow } from "./CarouselArrow"
 
 
 
@@ -37,7 +36,7 @@ const HotelDisplay = ({ hotel }) => {
             <div key={index}>
               <Image
                 src={urlFor(image).url()}
-                className='w-[400px] h-[350px] rounded-2xl transition-all duration-400 relative'
+                className='w-[400px] h-[350px] object-fill rounded-2xl transition-all duration-400 relative'
                 width={400}
                 height={350}
                 alt='Listing'

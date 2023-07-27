@@ -2,13 +2,15 @@ import React from 'react'
 
 const ToggleBar = () => {
   return (
-    <div className='md:mt-[205px] mt-[270px] py-2 flex items-center justify-center w-screen bg-white mb-5'>
+    <div className='md:mt-[205px] px-5 mx-auto mt-[220px] py-2 flex items-center justify-center w-screen bg-white mb-5'>
 
         <div className='flex items-center w-[612px] h-[66px] justify-between rounded-2xl border-2 p-4'>
 
-          <h3 className='border-r-[1px] pr-[20px] border-gray-300 font-semibold'>Display total price</h3>
+        <div className='md:flex flex-row items-center justify-between gap-3'>
+          <h3 className='md:border-r-[1px] pr-[10px] border-gray-300 font-semibold'>Display total price</h3>
 
-          <h3 className='-pl-[20px] -ml-[100px] text-gray-500'>Includes all fees, before taxes</h3>
+          <h3 className=' text-gray-500'>Includes all fees, before taxes</h3>
+        </div>
 
           <label className="relative inline-flex items-center cursor-pointer">
             <input type="checkbox" value="" className="sr-only peer"></input>
