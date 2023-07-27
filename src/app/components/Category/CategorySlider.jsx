@@ -150,7 +150,7 @@ const Categories = () => {
     };
   
     return (
-      <div className='flex fixed md:top-[85px] top-[74px] md:mt-0 mt-2 left-0 w-full bg-white md:pt-4 pt-1 justify-evenly items-center md:h-[120px] h-[70px] z-10'>
+      <div className='flex fixed md:top-[85px] top-[74px] md:mt-0 mt-2 left-0 w-full bg-white md:pt-4 pt-1 justify-evenly items-center md:h-[100px] h-[70px] z-10'>
         <div>
           <div className='flex items-center justify-between gap-2'>
             <AiOutlineLeftCircle

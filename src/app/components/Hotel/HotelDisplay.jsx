@@ -36,7 +36,7 @@ const HotelDisplay = ({ hotel }) => {
             <div key={index}>
               <Image
                 src={urlFor(image).url()}
-                className='w-[400px] h-[350px] object-fill rounded-2xl transition-all duration-400 relative'
+                className='md:w-[350px] md:h-[300px] w-[350px] h-[300px] object-fill rounded-2xl transition-all duration-400 relative'
                 width={400}
                 height={350}
                 alt='Listing'
