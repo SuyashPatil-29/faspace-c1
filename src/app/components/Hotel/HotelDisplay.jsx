@@ -50,19 +50,19 @@ const HotelDisplay = ({ hotel }) => {
       </div>
 
       <div className='flex justify-between items-center py-1 pt-3'>
-        <p className='font-bold text-lg text-black'>{hotel.name}</p>
+        <p className='font-bold text-md text-black'>{hotel.name}</p>
         <p className='flex items-center gap-2'>
-          <AiFillStar className='text-black' /> {hotel.stars}
+          <AiFillStar className='text-black text-sm' /> {hotel.stars}
         </p>
       </div>
 
-      <p className='text-gray-500'>{hotel.address}</p>
+      <p className='text-gray-500 text-sm'>{hotel.address}</p>
 
-      <p className='text-gray-500'>{hotel.date}</p>
+      <p className='text-gray-500 text-sm'>{hotel.date}</p>
 
       <div className='flex justify-between items-center'>
         <p>
-          <span className='font-bold'>₹ {hotel.price}</span> night
+          <span className='font-bold text-sm'>₹ {hotel.price}</span> night
         </p>
       </div>
     </div>
