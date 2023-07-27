@@ -25,7 +25,7 @@ const CategoryBox = ({
       `}
     >
       {/* Conditional rendering to check if 'IconType' is provided */}
-      {IconType && <IconType className="md:w-6 md:h-6 h-4 w-4 text-neutral-500 group-hover:text-neutral-800 group-hover:scale-110" />}
+      {IconType && <IconType className="md:w-4 md:h-4 h-4 w-4 text-neutral-500 group-hover:text-neutral-800 group-hover:scale-110" />}
       <div className="font-medium text-sm group-hover:text-neutral-800 group-hover:border-b-[3px] pb-2 border-gray-300 whitespace-nowrap md:whitespace-normal">
         {label}
       </div>
