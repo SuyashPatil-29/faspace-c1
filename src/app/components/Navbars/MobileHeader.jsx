@@ -5,7 +5,7 @@ import {LuSettings2} from 'react-icons/lu'
 const MobileHeader = () => {
   return (
     <div className='block md:hidden bg-white fixed top-0 left-0 w-full z-10 px-4'>
-    <div className='flex bg-white justify-between py-4 my-3 px-7 border-2 rounded-full items-center'>
+    <div className='flex bg-white justify-between py-2 my-3 px-7 border-2 rounded-full items-center'>
         <AiOutlineSearch className=' h-6 w-6 text-black'/>
 
         <div className='flex flex-col justify-start -ml-24'>
