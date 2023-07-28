@@ -29,7 +29,7 @@ const MapButton = () => {
     <div>
     {showButton ? (
       <div
-        className='flex gap-3 md:hidden bg-[rgb(34,34,34)] rounded-full py-4 px-5 fixed bottom-24 items-center mx-auto text-white left-[50%] translate-x-[-50%] cursor-pointer hover:scale-110 transition-all ease-in-out duration-300'
+        className='flex gap-3 md:hidden bg-[rgb(34,34,34)] rounded-full py-4 px-5 fixed bottom-4 items-center mx-auto text-white left-[50%] translate-x-[-50%] cursor-pointer hover:scale-110 transition-all ease-in-out duration-300'
         style={{ transition: 'transform 300ms ease-in-out' }}
       >
         <h1 className='font-semibold'>Map</h1>
