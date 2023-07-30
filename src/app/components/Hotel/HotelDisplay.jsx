@@ -56,7 +56,7 @@ const HotelDisplay = ({ hotel }) => {
         </p>
       </div>
 
-      <p className='text-gray-500 text-sm'>{hotel.address}</p>
+      <p className='text-gray-500 text-sm'>{hotel.address.slice(0, 40)}...</p>
 
       <p className='text-gray-500 text-sm'>{hotel.date}</p>
 
