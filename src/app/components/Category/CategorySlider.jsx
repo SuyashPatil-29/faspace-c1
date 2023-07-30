@@ -150,11 +150,11 @@ const Categories = () => {
     };
   
     return (
-      <div className='flex fixed md:top-[76px] top-[74px] md:mt-0 mt-2 left-0 w-full bg-white md:pt-3 pt-1 justify-evenly items-center md:h-[100px] h-[70px] z-10'>
+      <div className='flex fixed md:top-[76px] top-[74px] md:mt-0 mt-2 left-0 w-full bg-white md:pt-3 pt-1 justify-evenly items-center md:h-[100px] h-[60px] z-10'>
         <div>
           <div className='flex items-center justify-between gap-2'>
             <AiOutlineLeftCircle
-              className='h-8 w-8 md:block hidden'
+              className='h-8 w-8 md:block hidden text-neutral-600 hover:text-neutral-800'
               onClick={handleScrollLeft} // Call the scroll function on click
             />
   
@@ -182,7 +182,7 @@ const Categories = () => {
             </div>
   
             <AiOutlineRightCircle
-              className='h-8 w-8 md:block hidden'
+              className='h-8 w-8 md:block hidden text-neutral-600 hover:text-neutral-800'
               onClick={handleScrollRight} // Call the scroll function on click
             />
           </div>

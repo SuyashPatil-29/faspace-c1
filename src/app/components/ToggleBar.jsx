@@ -2,7 +2,7 @@ import React from 'react'
 
 const ToggleBar = () => {
   return (
-    <div className='px-5 mx-auto mt-[170px] md:py-2 flex items-center justify-center w-screen bg-white mb-5'>
+    <div className='px-5 mx-auto mt-[155px] md:mt-[170px] md:py-2 flex items-center justify-center w-screen bg-white mb-5'>
 
         <div className='flex items-center w-[612px] h-[66px] justify-between rounded-2xl border-2 p-4'>
 

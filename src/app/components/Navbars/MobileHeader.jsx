@@ -10,7 +10,7 @@ const MobileHeader = () => {
 
         <div className='flex flex-col justify-start -ml-24'>
             <h1>Anywhere</h1>
-            <h1 className='text-xs text-gray-400'>Anytime . Add Guests</h1>
+            <h1 className='text-xs text-gray-400'>Any week . Add Guests</h1>
         </div>
 
         <LuSettings2 className=' h-6 w-6 text-black'/>
