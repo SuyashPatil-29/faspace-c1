@@ -2,44 +2,35 @@
 
 /* Position the dots at the bottom of the slider */
 .slick-dots {
-    bottom: 20px; /* Adjust this value as needed to set the desired distance from the bottom */
-  }
-  
-  /* Customize the appearance of the dots */
-  .slick-dots li button:before {
-    color: white; /* Set the dot color to white */
-    opacity: 0.6; /* Set the default opacity for inactive dots */
-    margin: 0 5px; /* Adjust the horizontal margin between the dots */
-    font-size: 8px;
-  }
-  
-  /* Set the active dot to white with opacity of 1 */
-  .slick-dots li.slick-active button:before {
-    color: white;
-    opacity: 1;
-  }
-  
-  /* Position the arrows horizontally centered and vertically centered on the slider */
-  .slick-prev,
-  .slick-next {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  /* Customize the appearance of the arrows */
-  .slick-prev:before,
-  .slick-next:before {
-    color: white; /* Arrow icon color */
-    font-size: 24px; /* Arrow icon size */
-    /* Add any other custom styles you want for the arrows */
-  }
-  
-  /* Ensure that the PrevArrow is not hidden */
-  .slick-prev {
-    display: block !important;
-  }
-  
-  /* Ensure that the NextArrow is not hidden */
-  .slick-next {
-    display: block !important;
-  }
+  bottom: 20px; /* Adjust this value as needed to set the desired distance from the bottom */
+}
+
+/* Customize the appearance of the dots */
+.slick-dots li button:before {
+  color: white; /* Set the dot color to white */
+  opacity: 0.6; /* Set the default opacity for inactive dots */
+  margin: 0 5px; /* Adjust the horizontal margin between the dots */
+  font-size: 8px;
+}
+
+/* Set the active dot to white with opacity of 1 */
+.slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 1;
+}
+
+/* Position the arrows horizontally centered and vertically centered on the slider */
+.slick-prev,
+.slick-next {
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1; /* Set a higher z-index to ensure arrows are on top of the images */
+}
+
+/* Customize the appearance of the arrows */
+.slick-prev:before,
+.slick-next:before {
+  color: white; /* Arrow icon color */
+  font-size: 24px; /* Arrow icon size */
+  /* Add any other custom styles you want for the arrows */
+}

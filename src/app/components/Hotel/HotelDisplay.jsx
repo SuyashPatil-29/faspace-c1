@@ -27,7 +27,7 @@ const HotelDisplay = ({ hotel }) => {
 
   return (
     <div>
-      <div className='group'>
+      <div className='group relative'>
         <Slider
           {...settings}
           nextArrow={<NextArrow />}
@@ -44,7 +44,7 @@ const HotelDisplay = ({ hotel }) => {
             </div>
           ))}
         </Slider>
-        <div className='absolute top-3 right-3 cursor-pointer'>
+        <div className='absolute top-5 right-5 cursor-pointer'>
           <HeartButton />
         </div>
       </div>
