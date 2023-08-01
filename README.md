@@ -1,31 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project hosted on vercel at [https://airbnb-faspace.vercel.app](https://airbnb-faspace.vercel.app/)
 
-## Getting Started
+## Tools used
 
-First, run the development server:
+[Next.js](https://nextjs.org/) , [Tailwind CSS](https://tailwindcss.com/) , [React](https://react.dev/) , [React Icons](https://react-icons.github.io/react-icons/) , [React-slick](https://react-slick.neostack.com/) and [Sanity.io](https://www.sanity.io/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## How I went about making it 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+First, I used Pesticide on the main Airbnb website. Pesticide - a tool that allows us to see the page layout.
+It gave me a brief idea about the layout of the website.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Next I found the Logo from the Internet and looked for the icons on React-Icons. Having previously worked with React Icons, I knew I would find them here.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+##Challenges
 
-## Learn More
+1. The first challenge was to replace the original category options with options that were relevant to Faspace. I brainstromed and used ChatGPT for the options and their descriptions. Wrote them as a json object and looped over them using map.
 
-To learn more about Next.js, take a look at the following resources:
+2. Then I had to find a way to fetch the data in such a way that I could request for 4 Restaurants on scrolling and store the data. Sanity.io was my instant pick. I could arrange pics, store them and get all that information fetched to the frontend just as I would using a real backend.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Building the ui. I used Tailwind CSS to style the UI. The whole process was effortless. I used react-slick for the carousel and react icons library for the icons.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. Responsiveness. The whole page is fully responsive on mobile phones and larger screens and looks and feels just as the main website. Screenshots attatched on both phone and laptop respectively.
+
+![Phone](/assets/image.png)
+
+![Laptop](/assets/image-1.png)
 
 ## Deploy on Vercel
 
