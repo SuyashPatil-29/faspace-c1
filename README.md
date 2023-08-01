@@ -11,7 +11,7 @@ It gave me a brief idea about the layout of the website.
 
 Next I found the Logo from the Internet and looked for the icons on React-Icons. Having previously worked with React Icons, I knew I would find them here.
 
-##Challenges
+## Challenges
 
 1. The first challenge was to replace the original category options with options that were relevant to Faspace. I brainstromed and used ChatGPT for the options and their descriptions. Wrote them as a json object and looped over them using map.
 
@@ -21,9 +21,9 @@ Next I found the Logo from the Internet and looked for the icons on React-Icons.
 
 4. Responsiveness. The whole page is fully responsive on mobile phones and larger screens and looks and feels just as the main website. Screenshots attatched on both phone and laptop respectively.
 
-![Phone](/assets/image.png)
+![Phone](image.png)
 
-![Laptop](/assets/image-1.png)
+![Laptop](image-1.png)
 
 ## Deploy on Vercel
 
