@@ -21,7 +21,7 @@ Next I found the Logo from the Internet and looked for the icons on React-Icons.
 
 4. Responsiveness. The whole page is fully responsive on mobile phones and larger screens and looks and feels just as the main website. Screenshots attatched on both phone and laptop respectively.
 
-![Phone](image.png)
+![Phone](image-2.png)
 
 ![Laptop](image-1.png)
 
