@@ -59,7 +59,7 @@ const Hotels = () => {
   )
 
   return (
-    <div className='grid grid-cols-1 md:grid-cols-4 md:mx-24 mx-8 mb-24 gap-8'>
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:mx-24 mx-8 mb-24 gap-8'>
       {hotels.map((hotel) => {
         return <HotelDisplay hotel={hotel} key={hotel._id} />;
       })}
