@@ -17,7 +17,7 @@ const Header = () => {
       </div>
 
       <div className='flex gap-4 items-center'>
-        <h1 className=' text-sm font-semibold'>Airbnb Your home</h1>
+        <h1 className=' text-sm font-semibold whitespace-nowrap'>Airbnb Your home</h1>
         <GlobeAltIcon className='h-6 w-6' />
         <div className='flex gap-2 items-center py-1 px-2 border-2 rounded-full mx-4 shadow-md hover:shadow-lg'>
           <Bars3Icon className='h-6 w-6' />
